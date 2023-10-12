@@ -51,10 +51,7 @@ ol {
 
 .result {
   display: flex;
-  /* inline-size: 100%;
-  block-size: 100%; */
   flex-direction: column;
-  /* justify-content: flex-end; */
   }
 
 .result__video-container {
@@ -82,15 +79,14 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  
 }
 
 .content__list {
   position: relative;
   block-size: 304px;
   overflow: auto;
-  /* margin-bottom: -3px; */
   padding: 2px 2px 4px 3px;
+  min-width: 398px;
 }
 
 .content__list li {
@@ -98,7 +94,7 @@ ol {
 }
 
 .content__list li:last-child {
-  margin-bottom: 0;
+  margin-bottom: -3px;
 }
 
 .content__video-card {
@@ -158,20 +154,23 @@ ol {
 .content__video-card-title {
   font-family: Oswald;
   font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: 6px;
   margin-top: 6px;
+  /* width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; */
 }
 
 .content__video-card-description {
   font-family: Fira Sans Condensed;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 0.9;
+  /* width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; */
 }
 
 .search-form__fieldset {
@@ -187,13 +186,12 @@ ol {
   display: flex;
   width: fit-content;
   align-items: center;
-  /* gap: 5px; */
   gap: 4px;
 }
 
 .search-form__textfield {
   color: rgba(255, 255, 255, 0.7);
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: inherit;
   font-weight: inherit;
   appearance: none;
@@ -281,6 +279,7 @@ ol {
 .button:hover {
   text-decoration-line: underline;
 }
+
 .button:focus {
   outline: none;
 }
