@@ -29,7 +29,7 @@ ol {
 
 .page {
   inline-size: 1200px;
-  /* block-size: 100%; */
+  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -37,6 +37,7 @@ ol {
   background-color: #1b1919;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 133px 30px;
 }
 
@@ -45,6 +46,7 @@ ol {
   justify-content: center;
   align-items: end;
   gap: 30px;
+  inline-size: 1140px;
 }
 
 .result {
