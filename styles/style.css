@@ -211,8 +211,6 @@ ol {
 }
 
 .search-form__textfield:active {
-  /* outline: 1px solid #fff;
-  outline-offset: -1px; */
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
   padding: 0px;
@@ -228,24 +226,14 @@ ol {
   border: 1px solid #fff;
 }
 
-/* .search-form__checkbox::before  {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: '';
-  width: 15px;
-  height: 15px;
+  display: block;
   background-color: #fff;
-  outline: 1px solid #fff;
-  outline-offset: 1px;
-  margin: 2px;
-} */
-
-.search-form__checkbox:checked + .search-form__pseudo-checkbox {
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
-  outline: 1px solid #fff;
-  outline-offset: 1px;
-  margin: 2px;
-}
+  inline-size: 15px;
+  block-size: 15px;
+  margin: 1px 0 0 1px;
+ }
 
 .search-form__checkbox + .search-form__pseudo-checkbox:active {
   width: 15px;
